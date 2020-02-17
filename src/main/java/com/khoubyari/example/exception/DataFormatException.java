@@ -4,7 +4,12 @@ package com.khoubyari.example.exception;
  * for HTTP 400 errors
  */
 public final class DataFormatException extends RuntimeException {
-    public DataFormatException() {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6720511600664208677L;
+
+	public DataFormatException() {
         super();
     }
 

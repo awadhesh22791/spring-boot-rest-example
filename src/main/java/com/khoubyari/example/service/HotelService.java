@@ -49,7 +49,7 @@ public class HotelService {
 
     //http://goo.gl/7fxvVf
     public Page<Hotel> getAllHotels(Integer page, Integer size) {
-        Page pageOfHotels = hotelRepository.findAll(new PageRequest(page, size));
+        Page<Hotel> pageOfHotels = hotelRepository.findAll(new PageRequest(page, size));
         // example of adding to the /metrics
         if (size > 50) {
             counterService.increment("Khoubyari.HotelService.getAll.largePayload");
